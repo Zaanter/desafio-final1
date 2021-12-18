@@ -1,0 +1,7 @@
+temperaturaMin
+temperaturaMax
+Evapotranspiracion-maiz
+Evapotranspiracion-soja
+Evapotranspiracion-
+Velocidad
+Direccion

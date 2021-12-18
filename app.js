@@ -20,7 +20,7 @@ app.post('/submit', function(req,res){
       "url": "https://api.us-south.assistant.watson.cloud.ibm.com/instances/c97fe366-1519-4451-8f16-91b7cf71c2cc",
       "skillId": "d16e8fed-8588-49c7-8cae-e99d07a50137",
       "apiKey": "ZTN3628mIE3nXW30aFR0fhtvGwZKSzFLBEr_5sZi_2NW",
-      "submitConfirmation": false
+      "submitConfirmation": true
     }).catch((error) => {
           console.log('Error:' , error)
       })
