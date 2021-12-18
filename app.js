@@ -9,11 +9,12 @@ app.get('/', function(req, res) {
 });
 
 app.post('/submit', function(req,res){
+    data = req.body
     headers = {
       "Content-Type":"application/json",
       "Accept": "*/*"
     }
-    response = axios.post('http://172.21.188.211:3000/submit',req.body,{headers,timeout:15000}).catch((error) => {
+    response = axios.post('http://172.21.188.211:3000/submit',{data, headers,timeout:15000}).catch((error) => {
           console.log('Error:' , error)
       })
     res.json(response)
