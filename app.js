@@ -13,9 +13,10 @@ app.post('/submit', function(req,res){
       "Content-Type":"application/json",
       "Accept": "*/*"
     }
-    axios.post('http://172.21.188.211:3000/submit', req.body,headers,{timeout:15000}).catch((error) => {
+    response = axios.post('http://172.21.188.211:3000/submit',req.body,{headers,timeout:15000}).catch((error) => {
           console.log('Error:' , error)
       })
+    res.json(response)
 })
 
 app.listen(8080, function() {
